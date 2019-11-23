@@ -1,0 +1,95 @@
+html,body{
+	height: 100%;
+	margin:0px!important;
+	border: black solid 1px;
+	font-family:  Arial,sans-serif;
+}
+
+
+
+h1{
+	text-align: center;
+}
+
+#canvas_id{
+	position: relative;
+	height: 60%;
+	/*border: black solid 1px;*/
+	box-sizing: border-box;
+}
+
+#map_id{
+	display: inline-block;
+	float:left;
+	margin-left: 0%;
+	width: 40%;
+	height: 100%;
+	padding-bottom: 40%;
+	border: #dddddd solid 0.6em;
+	box-sizing: border-box;
+}
+
+#side_box_id{
+	display: inline-block;
+	width: 40%;
+	border-radius: 0.3em;
+	margin-left: 3%;
+	height: 100%;
+	overflow-y:auto;
+	border: blue solid 	0.3em;
+	box-sizing: border-box;
+}
+
+#side_box_id p{
+	background-color: #ff9f57;
+	border-radius: 0.5em;
+	padding-left: 0.4em;
+	font-size: 1.5em;
+	margin-top: 0.4em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#button_id{
+	height: 4em;
+	padding-right: 1em;
+	padding-left: 1em;
+	border-radius: 0.5em;
+	font-size: 1.3em;
+	background-color: #e7e7e7;
+	height:2em;
+
+}
+
+#input_id{
+	height: 4em;
+	padding-right: 1em;
+	padding-left:1em;
+
+	margin-bottom: 1%;
+	text-align: center;
+	margin-right: 2em;
+	border-radius: 0.5em;
+	font-size: 1.3em;
+	height: 2em;
+
+	text-align: left;
+
+	background-color: #fafafa;
+}
+
+#inputs{
+	text-align: center;
+}
+
+#err_msg_id{
+	width: 30%;
+	border-radius: 0.5em;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	background-color: red;
+	margin:auto;
+	visibility: hidden;
+
+}
