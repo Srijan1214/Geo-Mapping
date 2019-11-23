@@ -15,22 +15,26 @@ body{
 }
 
 #text_area_id{
-	position: relative;
+	position: absolute;
 	display: inline-block;
-	width: 17%;
-	height: 100%;
+	width: 20%;
+	height: 93%;
 	float: right;
-	margin: 0;
-	border: black solid 1px;
-	border: blue solid 	0em;
+	top:3%;
+	left: 79%;
+	border: black solid 0.1em;
+	z-index: 100;
+	background-color: white;
+	border-radius: 15px;
 }
 
 #map_id{
 	display: inline-block;
 	float:left;
 	margin: 0%;
-	width: 83%;
+	width: 100%;
 	height: 100%;
+	z-index: 1;
 }
 
 h1{
@@ -38,6 +42,7 @@ h1{
 	background-color: #0067b8;
 	color: white;
 	text-align: center;
+	margin-top: 0;
 }
 
 #inputs{
@@ -60,12 +65,17 @@ h1{
 #err_msg_id{
 	width: 70%;
 	border-radius: 0.5em;
-	font-size: 1.5em;
-	text-align: center;
+	font-size: 1.3em;
 	color: white;
 	background-color: red;
 	margin:auto;
 	visibility: hidden;
+	margin-bottom: 2%;
+}
+
+#err_msg_id p{
+	text-align: center;
+	margin: 0;
 }
 
 #records_id{
@@ -87,7 +97,6 @@ h1{
 
 #records_id .data_id{
 	text-align: left;
-	background-color: moccasin;
 	background-color: #dddddd;
 
 }
