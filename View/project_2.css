@@ -1,89 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
 html,body{
-	height: 100%;
+	height: 100% !important;
+	width: 100%;
 	margin:0px!important;
-	border: black solid 1px;
+	padding: 0 !important;
 	font-family:  Arial,sans-serif;
 }
 
-
-
-h1{
-	text-align: center;
+body{
+	display: block;
 }
 
-#canvas_id{
+#text_area_id{
 	position: relative;
-	height: 60%;
-	/*border: black solid 1px;*/
-	box-sizing: border-box;
+	display: inline-block;
+	width: 17%;
+	height: 100%;
+	float: right;
+	margin: 0;
+	border: black solid 1px;
+	border: blue solid 	0em;
 }
 
 #map_id{
 	display: inline-block;
 	float:left;
-	margin-left: 0%;
-	width: 40%;
+	margin: 0%;
+	width: 83%;
 	height: 100%;
-	padding-bottom: 40%;
-	border: #dddddd solid 0.6em;
-	box-sizing: border-box;
 }
 
-#side_box_id{
-	display: inline-block;
-	width: 40%;
-	border-radius: 0.3em;
-	margin-left: 3%;
-	height: 100%;
-	overflow-y:auto;
-	border: blue solid 	0.3em;
-	box-sizing: border-box;
-}
-
-#side_box_id p{
-	background-color: #ff9f57;
-	border-radius: 0.5em;
-	padding-left: 0.4em;
-	font-size: 1.5em;
-	margin-top: 0.4em;
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-#button_id{
-	height: 4em;
-	padding-right: 1em;
-	padding-left: 1em;
-	border-radius: 0.5em;
+h1{
 	font-size: 1.3em;
-	background-color: #e7e7e7;
-	height:2em;
-
-}
-
-#input_id{
-	height: 4em;
-	padding-right: 1em;
-	padding-left:1em;
-
-	margin-bottom: 1%;
+	background-color: #0067b8;
+	color: white;
 	text-align: center;
-	margin-right: 2em;
-	border-radius: 0.5em;
-	font-size: 1.3em;
-	height: 2em;
-
-	text-align: left;
-
-	background-color: #fafafa;
 }
 
 #inputs{
 	text-align: center;
 }
 
+#input_id{
+	width: 80%;
+	height: 3em;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+#button_id{
+	width: 80%;
+	height: 3em;
+	margin-bottom: 10%;
+}
+
 #err_msg_id{
-	width: 30%;
+	width: 70%;
 	border-radius: 0.5em;
 	font-size: 1.5em;
 	text-align: center;
@@ -91,5 +66,28 @@ h1{
 	background-color: red;
 	margin:auto;
 	visibility: hidden;
+}
+
+#records_id{
+	margin-left: 2%;
+	height: 65%;
+	overflow-x:auto;
+	overflow-y:auto;
+}
+
+#records_id .title{
+	text-align: center;
+	margin-top: 3%;font-size: 1.5em;
+	margin-left: 1%;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: moccasin;
+
+}
+
+#records_id .data_id{
+	text-align: left;
+	background-color: moccasin;
+	background-color: #dddddd;
 
 }

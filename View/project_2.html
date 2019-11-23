@@ -17,18 +17,18 @@
 	<script src="https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js"></script>
 </head>
 <body>
-	<H1>Enter Location to get Geo-Coordinates</H1>
-	<form method="post" id="inputs">
-		<input type="text" placeholder="Enter Location" id="input_id">
-		<button type="button" id="button_id">Get Location</button>
-	</form>
+	<div id="text_area_id">
+		<div id="err_msg_id"><P>Invaid Query</P></div>
 
-	<div id="err_msg_id"><P>Invaid Query</P></div>
-
-	<div id="canvas_id">
-		<div id="side_box_id">	</div>
-		<div id="map_id"></div>
+		<H1>Enter Location to get Geo-Coordinates</H1>
+		<form method="post" id="inputs">
+			<input type="text" placeholder="Enter Location" id="input_id"><br>
+			<button type="button" id="button_id">Get Location</button>
+		</form>
+		<div id="records_id"><p class="title">Co-ordinates</p>	</div>
 	</div>
+
+	<div id="map_id"></div>
 </body>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 

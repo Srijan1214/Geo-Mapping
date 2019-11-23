@@ -79,9 +79,9 @@ $("#button_id").on('click', function () {
 			return console.error('error');
 		}
 		if (data.latlng) {
-			$("#side_box_id").append("<p>" +
+			$("#records_id").append("<p class='data_id'>" +
 				$("#input_id").val() +
-				"<br>[Latitude,Longitude] : " + data.latlng
+				":<br>" + data.latlng
 				+ "</p>");
 
 			addMarkerAndPopup(data.latlng);
@@ -96,5 +96,5 @@ $("#button_id").on('click', function () {
 
 	//geocode the user input location
 	const geocoder = L.mapbox.geocoder('mapbox.places');
-	geocoder.query($("#input_id").val(), add_Location_To_Side_bar);
+geocoder.query($("#input_id").val(), add_Location_To_Side_bar);
 });
