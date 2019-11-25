@@ -16,21 +16,18 @@ body{
 
 #text_area_id{
 	position: absolute;
-	display: inline-block;
 	width: 20%;
 	height: 93%;
-	float: right;
 	top:3%;
 	left: 79%;
 	border: black solid 0.1em;
-	z-index: 100;
+	z-index: 10;
 	background-color: white;
-	border-radius: 15px;
+	border-radius: 7px;
 }
 
 #map_id{
 	display: inline-block;
-	float:left;
 	margin: 0%;
 	width: 100%;
 	height: 100%;
@@ -46,7 +43,10 @@ h1{
 }
 
 #inputs{
+	border-radius: inherit;
+	background: blue;
 	text-align: center;
+	padding: 10%;
 }
 
 #input_id{
@@ -59,7 +59,6 @@ h1{
 #button_id{
 	width: 80%;
 	height: 3em;
-	margin-bottom: 10%;
 }
 
 #err_msg_id{
@@ -80,15 +79,21 @@ h1{
 
 #records_id{
 	margin-left: 2%;
+	margin-right: 2%;
 	height: 65%;
+	margin-top: 5%;
 	overflow-x:auto;
 	overflow-y:auto;
+	border: solid black 2px;
+	background: white;
+	border-radius: inherit;
 }
 
 #records_id .title{
 	text-align: center;
 	margin-top: 3%;font-size: 1.5em;
-	margin-left: 1%;
+	margin-right: 2%;
+	margin-left: 2%;
 	font-weight: bold;
 	text-decoration: underline;
 	background-color: moccasin;
@@ -98,5 +103,26 @@ h1{
 #records_id .data_id{
 	text-align: left;
 	background-color: #dddddd;
+	margin-right: 2%;
+	margin-left: 2%;
+	padding: 2%;
 
+}
+
+.emphasis{
+	font-weight: bold;
+}
+
+.italics{
+	font-style: italic;
+}
+
+#text_area_id_touchable_id{
+	position: absolute;
+	height: 100%;	
+	width: 100%;
+	background: gray;
+	z-index: -1;
+	cursor: move;
+	border-radius: inherit;
 }
