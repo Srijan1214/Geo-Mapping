@@ -100,12 +100,13 @@ h1{
 
 }
 
-#records_id .data_id{
+#records_id .data_class{
 	text-align: left;
 	background-color: #dddddd;
 	margin-right: 2%;
 	margin-left: 2%;
 	padding: 2%;
+	cursor:pointer;
 
 }
 
